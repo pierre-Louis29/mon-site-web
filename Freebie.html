@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire de Style</title>
+    <link rel="stylesheet" href="freebie.css">
+</head>
+<body>
+    <div class="container">
+        <form id="questionnaire" action="https://formspree.io/xkgwrojg" method="POST">
+            <!-- Step 1 -->
+            <div class="step active" id="step1">
+                <h2>Quelles matières aimez-vous le plus en décoration ?</h2>
+                <div class="options">
+                    <img src="IMAGES/1.png" alt="Heritage" onclick="selectOption('step1', 'Heritage')"> <!--Style Heritage-->
+                    <img src="IMAGES/2.png" alt="Authentique" onclick="selectOption('step1', 'Authentique')"> <!--Style Authentique-->
+                    <img src="IMAGES/3.png" alt="Evasion" onclick="selectOption('step1', 'Evasion')"> <!--Style Evasion-->
+                    <img src="IMAGES/4.png" alt="Modernisme" onclick="selectOption('step1', 'Modernisme')"> <!--Style Modernisme-->
+                    <img src="IMAGES/5.png" alt="Memphis" onclick="selectOption('step1', 'Memphis')"> <!--Style Memphis-->
+                    <img src="IMAGES/6.png" alt="New Antic" onclick="selectOption('step1', 'New Antic')"> <!--Style New Antic-->
+                    <img src="IMAGES/7.png" alt="Scandinave / Wabi Sabi" onclick="selectOption('step1', 'Scandinave / Wabi Sabi')"> <!--Style Scandinave / Wabi Sabi-->
+                    <img src="IMAGES/8.png" alt="Vintage" onclick="selectOption('step1', 'Vintage')"> <!--Style Vintage-->
+                    <img src="IMAGES/9.png" alt="Art déco" onclick="selectOption('step1', 'Art déco')"> <!--Style Art déco-->
+                    <img src="IMAGES/10.png" alt="50’s - 70’s" onclick="selectOption('step1', '50’s - 70’s')"> <!--Style 50’s - 70’s-->
+                </div>
+                <button type="button" onclick="nextStep('step1', 'step2')">Suivant</button>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step" id="step2">
+                <h2>Quelle palette de couleurs préférez-vous ?</h2>
+                <div class="options">
+                    <img src="COULEURS/1.png" alt="Vintage" onclick="selectOption('step2', 'Vintage')"> <!--Style Vintage-->
+                    <img src="COULEURS/2.png" alt="New Antic" onclick="selectOption('step2', 'New Antic')"> <!--Style New Antic-->
+                    <img src="COULEURS/3.png" alt="Scandinave / Wabi Sabi" onclick="selectOption('step2', 'Scandinave / Wabi Sabi')"> <!--Style Scandinave / Wabi Sabi-->
+                    <img src="COULEURS/4.png" alt="50’s - 70’s" onclick="selectOption('step2', '50’s - 70’s')"> <!--Style 50’s - 70’s-->
+                    <img src="COULEURS/5.png" alt="Memphis" onclick="selectOption('step2', 'Memphis')"> <!--Style Memphis-->
+                    <img src="COULEURS/6.png" alt="Modernisme" onclick="selectOption('step2', 'Modernisme')"> <!--Style Modernisme-->
+                    <img src="COULEURS/7.png" alt="Evasion" onclick="selectOption('step2', 'Evasion')"> <!--Style Evasion-->
+                    <img src="COULEURS/8.png" alt="Authentique" onclick="selectOption('step2', 'Authentique')"> <!--Style Authentique-->
+                    <img src="COULEURS/9.png" alt="Heritage" onclick="selectOption('step2', 'Heritage')"> <!--Style Heritage-->
+                    <img src="COULEURS/10.png" alt="Art déco" onclick="selectOption('step2', 'Art déco')"> <!--Style Art déco-->
+                </div>
+                <button type="button" onclick="nextStep('step2', 'step3')">Suivant</button>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step" id="step3">
+                <h2>Quel type de mobilier vous attire le plus ?</h2>
+                <div class="options">
+                    <img src="MOBILIERS/1.png" alt="Art déco" onclick="selectOption('step3', 'Art déco')"> <!--Style Art déco-->
+                    <img src="MOBILIERS/2.png" alt="Heritage" onclick="selectOption('step3', 'Heritage')"> <!--Style Heritage-->
+                    <img src="MOBILIERS/3.png" alt="Authentique" onclick="selectOption('step3', 'Authentique')"> <!--Style Authentique-->
+                    <img src="MOBILIERS/4.png" alt="Evasion" onclick="selectOption('step3', 'Evasion')"> <!--Style Evasion-->
+                    <img src="MOBILIERS/5.png" alt="Modernisme" onclick="selectOption('step3', 'Modernisme')"> <!--Style Modernisme-->
+                    <img src="MOBILIERS/6.png" alt="Memphis" onclick="selectOption('step3', 'Memphis')"> <!--Style Memphis-->
+                    <img src="MOBILIERS/7.png" alt="50’s - 70’s" onclick="selectOption('step3', '50’s - 70’s')"> <!--Style 50’s - 70’s-->
+                    <img src="MOBILIERS/8.png" alt="New Antic" onclick="selectOption('step3', 'New Antic')"> <!--Style New Antic-->
+                    <img src="MOBILIERS/9.png" alt="Scandinave / Wabi Sabi" onclick="selectOption('step3', 'Scandinave / Wabi Sabi')"> <!--Style Scandinave / Wabi Sabi-->
+                    <img src="MOBILIERS/10.png" alt="Vintage" onclick="selectOption('step3', 'Vintage')"> <!--Style Vintage-->
+                </div>
+                <button type="button" onclick="nextStep('step3', 'step4')">Suivant</button>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step" id="step4">
+                <h2>Quel type de luminaires préférez-vous ??</h2>
+                <div class="options">
+                    <img src="LUMINAIRE/1.png" alt="Art déco" onclick="selectOption('step4', 'Art déco')"> <!--Style Art déco-->
+                    <img src="LUMINAIRE/2.png" alt="Heritage" onclick="selectOption('step4', 'Heritage')"> <!--Style Heritage-->
+                    <img src="LUMINAIRE/3.png" alt="Authentique" onclick="selectOption('step4', 'Authentique')"> <!--Style Authentique-->
+                    <img src="LUMINAIRE/4.png" alt="Evasion" onclick="selectOption('step4', 'Evasion')"> <!--Style Evasion-->
+                    <img src="LUMINAIRE/5.png" alt="Modernisme" onclick="selectOption('step4', 'Modernisme')"> <!--Style Modernisme-->
+                    <img src="LUMINAIRE/6.png" alt="Memphis" onclick="selectOption('step4', 'Memphis')"> <!--Style Memphis-->
+                    <img src="LUMINAIRE/7.png" alt="50’s - 70’s" onclick="selectOption('step4', '50’s - 70’s')"> <!--Style 50’s - 70’s-->
+                    <img src="LUMINAIRE/8.png" alt="New Antic" onclick="selectOption('step4', 'New Antic')"> <!--Style New Antic-->
+                    <img src="LUMINAIRE/9.png" alt="Scandinave / Wabi Sabi" onclick="selectOption('step4', 'Scandinave / Wabi Sabi')"> <!--Style Scandinave / Wabi Sabi-->
+                    <img src="LUMINAIRE/10.png" alt="Vintage" onclick="selectOption('step4', 'Vintage')"> <!--Style Vintage-->
+                </div>
+                <button type="button" onclick="nextStep('step4', 'step5')">Suivant</button>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="step" id="step5">
+                <h2>Quel type d'accessoires déco préférez-vous ?</h2>
+                <div class="options">
+                    <img src="ACCESSOIRES/1.png" alt="Art déco" onclick="selectOption('step5', 'Art déco')"> <!--Style Art déco-->
+                    <img src="ACCESSOIRES/2.png" alt="Heritage" onclick="selectOption('step5', 'Heritage')"> <!--Style Heritage-->
+                    <img src="ACCESSOIRES/3.png" alt="Authentique" onclick="selectOption('step5', 'Authentique')"> <!--Style Authentique-->
+                    <img src="ACCESSOIRES/4.png" alt="Evasion" onclick="selectOption('step5', 'Evasion')"> <!--Style Evasion-->
+                    <img src="ACCESSOIRES/5.png" alt="Modernisme" onclick="selectOption('step5', 'Modernisme')"> <!--Style Modernisme-->
+                    <img src="ACCESSOIRES/6.png" alt="Memphis" onclick="selectOption('step5', 'Memphis')"> <!--Style Memphis-->
+                    <img src="ACCESSOIRES/7.png" alt="50’s - 70’s" onclick="selectOption('step5', '50’s - 70’s')"> <!--Style 50’s - 70’s-->
+                    <img src="ACCESSOIRES/8.png" alt="New Antic" onclick="selectOption('step5', 'New Antic')"> <!--Style New Antic-->
+                    <img src="ACCESSOIRES/9.png" alt="Scandinave / Wabi Sabi" onclick="selectOption('step5', 'Scandinave / Wabi Sabi')"> <!--Style Scandinave / Wabi Sabi-->
+                    <img src="ACCESSOIRES/10.png" alt="Vintage" onclick="selectOption('step5', 'Vintage')"> <!--Style Vintage-->
+                </div>
+                <button type="button" onclick="nextStep('step5', 'submission')">Suivant</button>
+            </div>
+
+            <!-- Submission -->
+            <div class="step" id="submission">
+                <h2>Entrez votre e-mail pour recevoir votre moodboard personnalisé :</h2>
+                <input type="email" name="_replyto" id="email" required>
+                <input type="hidden" name="_subject" value="Nouveau Moodboard">
+                <input type="hidden" name="moodboard" id="moodboard">
+                <button type="submit">Soumettre</button>
+                <p id="message"></p>
+            </div>
+        </form>
+    </div>
+    <script src="freebie.js"></script>
+</body>
+</html>
+
